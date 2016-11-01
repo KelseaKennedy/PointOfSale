@@ -7,7 +7,8 @@ function addItem()
   
 document.getElementById("price").value = "";
   
- if (isNaN(newItem) ) {
+ if (isNaN(newItem) )
+ {
       window.alert("Enter price as a number."); 
  }
  else 
@@ -20,9 +21,6 @@ document.getElementById("price").value = "";
  document.getElementById("subtotal").innerHTML = dollars; 
  setCookie("preTax", runningTotal, 20);
  }
-  //OTHERWISE,
- 
-  // update a cookie called "preTax" with the value of runningTotal
 }
 
 //takes a number and gives a string with the number displayed as USD currency
